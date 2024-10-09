@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: monospace;
   background-color: #282c33;
   color: white;
 }
