@@ -10,10 +10,10 @@ import { RouterModule } from '@angular/router';
   styleUrl: './navbar.component.css',
 })
 export class NavbarComponent {
-  navRoutes: Array<{ name: string; path: string }> = [
-    { name: 'home', path: '/home' },
-    { name: 'work', path: '/work' },
-    { name: 'about-me', path: '/about-me' },
-    { name: 'contacts', path: '/contacts' },
+  navRoutes = [
+    { name: 'Home', path: '' },
+    { name: 'Work', path: 'work' },
+    { name: 'About Me', path: 'about-me' },
+    { name: 'Contacts', path: 'contacts' },
   ];
 }

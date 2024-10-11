@@ -4,12 +4,12 @@
     <div class="text-2xl font-bold">Uzair</div>
   </div>
   <div class="flex gap-10 items-center">
-    <span
+    <a
       *ngFor="let route of navRoutes"
       [routerLink]="route.path"
       class="text-xl font-medium cursor-pointer text-white"
     >
       <span class="text-purple pr-1">#</span>{{ route.name }}
-    </span>
+    </a>
   </div>
 </div>
