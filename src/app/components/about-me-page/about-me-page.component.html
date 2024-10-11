@@ -7,4 +7,21 @@
     <img src="assets/images/shapes.svg" width="500" />
     <app-about-me></app-about-me>
   </div>
+  <div class="flex flex-col mt-32 mb-24 gap-8">
+    <div class="text-2xl"><span class="text-purple">#</span>skills</div>
+    <app-skills-card></app-skills-card>
+  </div>
+  <div class="flex justify-between items-center">
+    <div class="flex flex-col gap-8 w-1/4">
+      <div class="text-2xl"><span class="text-purple">#</span>my-fun-facts</div>
+      <div class="flex flex-col gap-4">
+        <div *ngFor="let funFact of funFacts" class="border border-gray p-2">
+          {{ funFact }}
+        </div>
+      </div>
+    </div>
+    <div>
+      <img src="assets/images/shapes.svg" />
+    </div>
+  </div>
 </div>
