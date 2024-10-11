@@ -11,9 +11,9 @@ import { RouterModule } from '@angular/router';
 })
 export class NavbarComponent {
   navRoutes = [
-    { name: 'Home', path: '' },
-    { name: 'Work', path: 'work' },
-    { name: 'About Me', path: 'about-me' },
-    { name: 'Contacts', path: 'contacts' },
+    { name: 'home', path: '' },
+    { name: 'work', path: 'work' },
+    { name: 'about-me', path: 'about-me' },
+    { name: 'contacts', path: 'contacts' },
   ];
 }
