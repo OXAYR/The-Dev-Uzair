@@ -1,27 +1,35 @@
 <div>
   <div
-    class="border-t border-gray my-16 h-44 px-32 flex justify-between items-center"
+    class="border-t border-gray my-16 h-auto md:h-44 px-4 md:px-32 flex flex-col md:flex-row justify-between items-center"
   >
-    <div class="w-2/3">
-      <div class="flex gap-2 items-center">
+    <!-- Left Section -->
+    <div class="w-full mt-8 md:mt-0 md:w-2/3 mb-6 md:mb-0">
+      <div class="flex gap-2 items-center justify-center md:justify-start">
         <img src="assets/images/Logo.svg" alt="Logo" class="w-4" />
         <div class="text-lg">
-          Uzair<span class="text-sm text-gray pl-3"
-            >uzairmaqsood451{{ "&#64;" }}gmail.com</span
-          >
+          Uzair
+          <span class="text-sm text-gray pl-3">
+            uzairmaqsood451{{ "&#64;" }}gmail.com
+          </span>
         </div>
       </div>
-      <div class="text-base my-5">software engineer</div>
+      <div class="text-base my-5 md:text-left text-center">
+        software engineer
+      </div>
     </div>
+
+    <!-- Right Section (Media) -->
     <div class="flex flex-col items-center">
       <div class="text-xl">Media</div>
-      <div class="flex items-center justify-center mt-2 gap-2">
+      <div class="flex items-center justify-center mt-2 gap-4">
         <div class="material-icons">facebook</div>
         <div class="material-icons">mail</div>
         <div class="material-icons">phone</div>
       </div>
     </div>
   </div>
+
+  <!-- Copyright Section -->
   <div class="flex justify-center text-base text-gray mb-8">
     © Copyright 2024. Made by Uzair
   </div>
