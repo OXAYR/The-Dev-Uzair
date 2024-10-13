@@ -10,6 +10,7 @@ import { RouterModule } from '@angular/router';
   styleUrl: './navbar.component.css',
 })
 export class NavbarComponent {
+  isOpen = false;
   navRoutes = [
     { name: 'home', path: '' },
     { name: 'work', path: 'work' },

@@ -1,26 +1,37 @@
 <div class="">
   <div class="flex flex-col gap-4 my-10">
-    <div class="text-4xl"><span class="text-purple">/</span>about-me</div>
-    <div class="text-lg">Who am i?</div>
+    <div class="md:text-4xl sm:text-2xl text-lg">
+      <span class="text-purple">/</span>about-me
+    </div>
+    <div class="md:text-lg sm:text-base text-sm">Who am i?</div>
   </div>
-  <div class="flex flex-row-reverse items-center">
-    <img src="assets/images/about_me.svg" />
+  <div
+    class="flex md:flex-row-reverse flex-col-reverse items-center justify-center"
+  >
+    <img
+      src="assets/images/about_me.svg"
+      class="md:w-full w-64 md:mt-0 mt-10"
+    />
     <app-about-me></app-about-me>
   </div>
   <div class="flex flex-col my-24 gap-8">
-    <div class="text-2xl"><span class="text-purple">#</span>skills</div>
+    <div class="md:text-2xl sm:text-xl text-lg">
+      <span class="text-purple">#</span>skills
+    </div>
     <app-skills-card></app-skills-card>
   </div>
   <div class="flex justify-between items-center">
-    <div class="flex flex-col gap-8 w-1/4">
-      <div class="text-2xl"><span class="text-purple">#</span>my-fun-facts</div>
+    <div class="flex flex-col gap-8 md:w-1/4">
+      <div class="md:text-2xl sm:text-xl text-lg">
+        <span class="text-purple">#</span>my-fun-facts
+      </div>
       <div class="flex flex-col gap-4">
         <div *ngFor="let funFact of funFacts" class="border border-gray p-2">
           {{ funFact }}
         </div>
       </div>
     </div>
-    <div>
+    <div class="hidden md:block">
       <img src="assets/images/shapes.svg" />
     </div>
   </div>

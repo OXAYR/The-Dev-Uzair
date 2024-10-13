@@ -1,13 +1,38 @@
-<div class="flex py-8 px-32 justify-between">
+<div class="flex items-center justify-between py-8 px-4 lg:px-32">
+  <!-- Logo -->
   <div class="flex gap-2 items-center">
     <img src="assets/images/Logo.svg" alt="Logo" class="w-5" />
     <div class="text-2xl font-bold">Uzair</div>
   </div>
-  <div class="flex gap-10 items-center">
+
+  <!-- Burger Icon (Visible on Mobile and Tablet) -->
+  <div class="lg:hidden">
+    <button class="text-white focus:outline-none" (click)="isOpen = !isOpen">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        class="w-8 h-8"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M4 6h16M4 12h16m-7 6h7"
+        />
+      </svg>
+    </button>
+  </div>
+
+  <div
+    [ngClass]="{ block: isOpen, hidden: !isOpen }"
+    class="lg:flex lg:flex-row lg:gap-10 lg:items-center flex-col absolute lg:static bg-background md:bg-opacity-100 md:bg-transparent top-20 left-0 w-full lg:w-auto"
+  >
     <a
       *ngFor="let route of navRoutes"
       [routerLink]="route.path"
-      class="text-xl font-medium cursor-pointer text-white"
+      class="text-xl font-medium cursor-pointer text-white block py-2 px-4 lg:inline lg:py-0 lg:px-0"
     >
       <span class="text-purple pr-1">#</span>{{ route.name }}
     </a>
