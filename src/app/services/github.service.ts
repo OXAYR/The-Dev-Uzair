@@ -8,7 +8,7 @@ import { environment } from '../../environments/environments';
 })
 export class GithubService {
   private apiUrl = 'https://api.github.com/user/repos';
-  private token = `${environment.githubToken}`;
+  private token = `${environment.GITHUB_TOKEN}`;
 
   constructor(private http: HttpClient) {}
 
