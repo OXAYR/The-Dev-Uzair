@@ -13,7 +13,6 @@ export class GithubService {
   constructor(private http: HttpClient) {}
 
   getRepos(): Observable<any[]> {
-    console.log('here os hte tokken', environment.githubToken);
     const headers = new HttpHeaders({
       Authorization: `Bearer ${this.token}`,
     });

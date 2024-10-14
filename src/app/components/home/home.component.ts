@@ -26,7 +26,7 @@ export class HomeComponent {
 
   ngOnInit() {
     this.GithubService.getRepos().subscribe((data: any[]) => {
-      this.repos = data;
+      this.repos = data?.reverse();
     });
   }
 }
