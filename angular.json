@@ -83,6 +83,13 @@
             "styles": ["src/styles.css"],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "repo": "https://github.com/OXAYR/The-Dev-Uzair.git",
+            "branch": "gh-pages"
+          }
         }
       }
     }
