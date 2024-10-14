@@ -1,3 +1,4 @@
+import { GithubService } from './../../services/github.service';
 import { Component } from '@angular/core';
 import { HeroComponent } from '../hero/hero.component';
 import { ProjectCardComponent } from '../project-card/project-card.component';
@@ -18,4 +19,14 @@ import { ContactusComponent } from '../contactus/contactus.component';
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })
-export class HomeComponent {}
+export class HomeComponent {
+  repos: any[] = [];
+
+  constructor(private GithubService: GithubService) {}
+
+  ngOnInit() {
+    this.GithubService.getRepos().subscribe((data: any[]) => {
+      this.repos = data;
+    });
+  }
+}

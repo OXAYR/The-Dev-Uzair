@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ProjectCardComponent } from '../project-card/project-card.component';
+import { GithubService } from '../../services/github.service';
 
 @Component({
   selector: 'app-work',
@@ -8,4 +9,14 @@ import { ProjectCardComponent } from '../project-card/project-card.component';
   templateUrl: './work.component.html',
   styleUrl: './work.component.css',
 })
-export class WorkComponent {}
+export class WorkComponent {
+  repos: any[] = [];
+
+  constructor(private GithubService: GithubService) {}
+
+  ngOnInit() {
+    this.GithubService.getRepos().subscribe((data: any[]) => {
+      this.repos = data;
+    });
+  }
+}
