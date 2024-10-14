@@ -5,10 +5,17 @@
       class="mt-12 mb-8 md:mt-24 md:mb-12 md:w-2/3 w-full md:text-2xl text-lg flex"
     >
       <span class="text-purple pr-1">#</span>projects
-      <div class="border-t-2 border-purple lg:px-96 md:px-44 mt-4 ml-2"></div>
+      <div
+        class="border-t-2 border-purple animate-pulse lg:px-96 md:px-44 mt-4 ml-2"
+      ></div>
     </div>
     <div>
-      <button class="text-gray font-bold md:p-2 w-32">View Here -></button>
+      <button
+        class="text-gray font-bold md:p-2 w-32"
+        (click)="navigateToContacts('/work')"
+      >
+        View Here ->
+      </button>
     </div>
   </div>
   <div class="w-screen">
@@ -19,9 +26,11 @@
       class="mt-12 mb-8 md:mt-24 md:mb-12 md:w-2/3 w-full md:text-2xl text-lg flex"
     >
       <span class="text-purple pr-1">#</span>skills
-      <div class="border-t-2 border-purple md:px-64 mt-4 ml-2"></div>
+      <div
+        class="border-t-2 border-purple animate-pulse md:px-64 mt-4 ml-2"
+      ></div>
     </div>
-    <div class="flex w-screen justify-between gap-32s">
+    <div class="flex w-full justify-between gap-32s">
       <img
         class="hidden md:block w-1/3"
         src="assets/images/shapes.svg"
@@ -35,19 +44,24 @@
       class="mt-12 md:mt-24 md:mb-12 md:w-2/3 w-full md:text-2xl text-lg flex"
     >
       <span class="text-purple pr-1">#</span>about-me
-      <div class="border-t-2 border-purple md:px-64 md:mt-4 ml-2"></div>
+      <div
+        class="border-t-2 border-purple animate-pulse md:px-64 md:mt-4 ml-2"
+      ></div>
     </div>
     <div
       class="flex md:flex-row-reverse flex-col-reverse items-center justify-center"
     >
       <img
         src="assets/images/about_me.svg"
-        class="md:w-full w-64 md:mt-0 mt-10"
+        class="md:w-96 w-64 md:mt-0 mt-10"
       />
       <app-about-me></app-about-me>
     </div>
     <div class="my-8 text-lg">
-      <button class="border border-purple text-white p-2 md:text-base text-sm">
+      <button
+        class="border border-purple text-white p-2 md:text-base text-sm shadow-purple shadow-lg"
+        (click)="navigateToContacts('/about-me')"
+      >
         Read more ->
       </button>
     </div>
@@ -57,7 +71,9 @@
       class="mt-12 mb-8 md:mt-24 md:mb-12 md:w-2/3 w-full md:text-2xl text-lg flex"
     >
       <span class="text-purple pr-1">#</span>contacts
-      <div class="border-t-2 border-purple md:px-32 mt-4 ml-2"></div>
+      <div
+        class="border-t-2 border-purple animate-pulse md:px-32 mt-4 ml-2"
+      ></div>
     </div>
     <app-contactus></app-contactus>
   </div>

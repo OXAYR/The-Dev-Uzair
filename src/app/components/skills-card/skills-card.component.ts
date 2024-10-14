@@ -21,11 +21,11 @@ export class SkillsCardComponent {
     },
     {
       heading: 'Other',
-      text: 'HTML CSS REST',
+      text: 'HTML CSS REST Scrapping Wordpress Wordpress Headless',
     },
     {
       heading: 'Frameworks',
-      text: 'Angular React Vue Node Express React Native',
+      text: 'Angular React Vue Node Express React Native Next',
     },
   ];
 }
